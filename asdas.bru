@@ -1,0 +1,19 @@
+meta {
+  name: asdas
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/api/v1/auth/login/
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {\"email\": \"user@mail.com\", \"password\": \"pass\"}
+}
